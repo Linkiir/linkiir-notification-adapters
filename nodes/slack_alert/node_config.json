@@ -1,0 +1,46 @@
+{
+  "guid": "",
+  "workflow_guid": "",
+  "node_type": "transform",
+  "node_type_id": "LKNOTIF_SLACK_ALERT",
+  "interval": false,
+  "node_name": "Slack Alert",
+  "description": "Receives notification alerts and posts them to a Slack channel. Optionally resolves an email to a user mention. Passes alert data downstream for further processing.",
+  "config": [
+    {
+      "label": "API Token",
+      "value": "",
+      "field_type": "password",
+      "description": "Slack Bot User OAuth Token (starts with xoxb-). Created in the Slack App settings under OAuth & Permissions."
+    },
+    {
+      "label": "Channel ID",
+      "value": "",
+      "field_type": "string",
+      "description": "The Slack channel ID to post messages to. Find it by right-clicking the channel name and choosing Copy Link \u2014 the ID is the last path segment."
+    },
+    {
+      "label": "Mention Email",
+      "value": "",
+      "field_type": "string",
+      "description": "Optional. An email address to resolve to a Slack user mention and append to the message. Leave empty to send the message without a mention."
+    },
+    {
+      "label": "Live Mode",
+      "value": true,
+      "field_type": "bool",
+      "description": "When off, API requests are simulated and no message is sent. Useful while wiring up the workflow."
+    },
+    {
+      "label": "Verify TLS",
+      "value": true,
+      "field_type": "bool",
+      "description": "Whether to verify the Slack server's TLS certificate. Leave on outside of local testing behind a proxy."
+    }
+  ],
+  "library_deps": {
+    "slack": "1.0.0"
+  },
+  "config_version": 1,
+  "version": "1.0.0"
+}

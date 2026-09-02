@@ -1,0 +1,5 @@
+{
+  "name": "slack",
+  "description": "Slack messaging client. Sends messages to channels, resolves user mentions by email, and supports Block Kit formatting. Copy the slack/ folder into a node and add it to package.path.",
+  "version": "1.0.0"
+}

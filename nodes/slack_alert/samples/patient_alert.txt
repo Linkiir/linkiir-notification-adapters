@@ -1,0 +1,1 @@
+{"rule_name":"Critical Lab Result","severity":"high","message":"Potassium level 6.8 mEq/L exceeds critical threshold","source":"LabResultsWorkflow_a1b2c3","workflow_id":"LabResults_f4e5d6","timestamp":"2025-01-15T14:32:07.000Z","patient_id":"P-00482","department":"Emergency"}
