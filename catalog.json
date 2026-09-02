@@ -1,0 +1,9 @@
+{
+  "format": "linkiir.catalog",
+  "format_version": 1,
+  "id": "lknotif",
+  "name": "Linkiir Notification Adapters",
+  "publisher": "Linkiir Inc",
+  "description": "Catalog of notification service adapters",
+  "min_grid_version": ""
+}
