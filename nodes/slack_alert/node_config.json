@@ -43,5 +43,56 @@
     "slack": "1.0.0"
   },
   "config_version": 1,
-  "version": "1.0.0"
+  "version": "1.0.1",
+  "template_origin": {
+    "catalog": "linkiir-notification-adapters",
+    "template_id": "group:linkiir-notification-adapters/slack_alert",
+    "commit": "db695ee38281ec0f2a5a59afe52696441f23f29d",
+    "version": "1.0.0",
+    "linked": false,
+    "files": [
+      "main.lua",
+      "samples/patient_alert.txt",
+      "slack/slack.lua",
+      "slack/slack_http.lua"
+    ],
+    "field_defs": [
+      {
+        "label": "API Token",
+        "field_type": "password",
+        "description": "Slack Bot User OAuth Token (starts with xoxb-). Created in the Slack App settings under OAuth & Permissions.",
+        "list_options": null,
+        "depends_on": null
+      },
+      {
+        "label": "Channel ID",
+        "field_type": "string",
+        "description": "The Slack channel ID to post messages to. Find it by right-clicking the channel name and choosing Copy Link \u2014 the ID is the last path segment.",
+        "list_options": null,
+        "depends_on": null
+      },
+      {
+        "label": "Mention Email",
+        "field_type": "string",
+        "description": "Optional. An email address to resolve to a Slack user mention and append to the message. Leave empty to send the message without a mention.",
+        "list_options": null,
+        "depends_on": null
+      },
+      {
+        "label": "Live Mode",
+        "field_type": "bool",
+        "description": "When off, API requests are simulated and no message is sent. Useful while wiring up the workflow.",
+        "list_options": null,
+        "depends_on": null
+      },
+      {
+        "label": "Verify TLS",
+        "field_type": "bool",
+        "description": "Whether to verify the Slack server's TLS certificate. Leave on outside of local testing behind a proxy.",
+        "list_options": null,
+        "depends_on": null
+      }
+    ]
+  },
+  "min_grid_version": "1.2.0"
 }
