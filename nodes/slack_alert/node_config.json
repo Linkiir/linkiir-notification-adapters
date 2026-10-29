@@ -40,10 +40,10 @@
     }
   ],
   "library_deps": {
-    "slack": "1.0.0"
+    "slack": "1.1.0"
   },
   "config_version": 1,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "template_origin": {
     "catalog": "linkiir-notification-adapters",
     "template_id": "group:linkiir-notification-adapters/slack_alert",
